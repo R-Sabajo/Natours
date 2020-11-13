@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R-Sabajo/Natours.git"
+  },
+  "author": "R Sabajo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R-Sabajo/Natours/issues"
+  },
+  "homepage": "https://github.com/R-Sabajo/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
