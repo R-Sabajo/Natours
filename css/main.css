@@ -34,7 +34,6 @@ body {
   position: relative;
 }
 
-/* Logo */
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -45,7 +44,6 @@ body {
   height: 3.5rem;
 }
 
-/* Text-box */
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -232,6 +230,12 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
@@ -242,6 +246,10 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
+}
+
+.btn--white::after {
+  background-color: #fff;
 }
 
 .btn::after {
@@ -256,16 +264,6 @@ body {
   z-index: -1;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-}
-
-.btn--white::after {
-  background-color: #fff;
-}
-
-.btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
 }
 
 .btn--animate {
