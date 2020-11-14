@@ -1,6 +1,6 @@
 .btn:link,
 .btn:visited {
-  font-size: 1.6rem;
+  font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
@@ -13,7 +13,7 @@
 
 .btn {
   &:hover {
-    transform: translateY(-3px);
+    transform: translateY(0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -23,7 +23,7 @@
   }
 
   &:active {
-    transform: translateY(-1px);
+    transform: translateY(0.1rem);
     box-shadow: 0 0.5rem 0.5rem rgba($color-black, 0.2);
   }
 
@@ -51,5 +51,46 @@
 
   &--animate {
     animation: moveInBottom 750ms 1750ms ease-out backwards;
+  }
+}
+
+.btn-text {
+  &:any-link {
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    padding: 0.3rem;
+    position: relative;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-white;
+    transform: translateY(-0.2rem);
+
+    &::after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    background-color: $color-primary;
+    height: 90%;
+    width: 0%;
+    transform: scaleX(1.2) scaleY(1.1);
+    opacity: 0;
+    border-radius: 5rem;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-out;
+    z-index: -1;
   }
 }
