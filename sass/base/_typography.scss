@@ -31,3 +31,29 @@ body {
     animation: moveInRight 1500ms 500ms ease-out backwards;
   }
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  background-position: top;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1) translate(-4rem, -2rem) rotateX(5deg) rotateZ(-2deg)
+      rotateY(-3deg);
+    text-shadow: 2rem 2rem 0.7rem rgba($color-black, 0.2);
+  }
+}
