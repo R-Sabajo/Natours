@@ -376,8 +376,8 @@ body {
   border-radius: 0.3rem;
   outline-offset: 1.5rem;
   position: absolute;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   z-index: 10;
 }
 
@@ -398,8 +398,8 @@ body {
 
 .composition__photo:hover {
   outline: 0.7rem solid #55c57a;
-  -webkit-transform: scale(1.05) translateY(-0.5rem);
-          transform: scale(1.05) translateY(-0.5rem);
+  -webkit-transform: scale(1.25) translateY(-1rem);
+          transform: scale(1.25) translateY(-1rem);
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
