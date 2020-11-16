@@ -49,11 +49,6 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   transition: all 0.3s;
-
-  &:hover {
-    transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
-    text-shadow: 2rem 2rem 1rem rgba($color-black, 0.2);
-  }
 }
 
 .heading-tertiary {

@@ -2,21 +2,22 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-  background-color: $color-white;
+  background-color: rgba($color-white, 0.7);
   border-radius: 0.3rem;
   padding: 6rem;
   padding-left: 9rem;
   transform: skewX(-12deg);
 
   &__shape {
+    position: relative;
     width: 15rem;
     height: 15rem;
     float: left;
     background-color: $color-primary;
+    overflow: hidden;
 
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
 
@@ -24,10 +25,45 @@
   }
 
   &__img {
+    background-size: cover;
+    background-position: center;
     height: 100%;
+    transform: scale(1.1);
+    transition: all 0.3s;
+
+    &--1 {
+      background-image: url(../img/nat-8.jpg);
+    }
+
+    &--2 {
+      background-image: url(../img/nat-9.jpg);
+    }
   }
 
   &__text {
     transform: skewX(12deg);
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover &__img {
+    transform: scale(1);
+    filter: blur(0.3rem) brightness(80%);
   }
 }

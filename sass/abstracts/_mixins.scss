@@ -5,3 +5,10 @@
     clear: both;
   }
 }
+
+@mixin hover-heading-secondary {
+  &:hover .heading-secondary {
+    transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+    text-shadow: 2rem 2rem 1rem rgba($color-black, 0.2);
+  }
+}
