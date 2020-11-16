@@ -2,6 +2,11 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0 25rem;
   margin-top: -20vh;
+
+  &:hover .heading-secondary {
+    transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+    text-shadow: 2rem 2rem 1rem rgba($color-black, 0.2);
+  }
 }
 
 .section-features {
@@ -25,4 +30,14 @@
   background-color: $color-grey-light-1;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+
+  &:hover .heading-secondary {
+    transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+    text-shadow: 2rem 2rem 1rem rgba($color-black, 0.2);
+  }
+}
+
+.section-stories {
+  background-color: $color-grey-light-1;
+  padding: 15rem 0;
 }

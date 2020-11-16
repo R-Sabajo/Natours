@@ -196,9 +196,9 @@ body {
 }
 
 .heading-secondary:hover {
-  -webkit-transform: scale(1.1) translate(-4rem, -2rem) rotateX(3deg) rotateY(-3deg) rotateZ(-1deg);
-          transform: scale(1.1) translate(-4rem, -2rem) rotateX(3deg) rotateY(-3deg) rotateZ(-1deg);
-  text-shadow: 2rem 2rem 0.7rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+          transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+  text-shadow: 2rem 2rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .heading-tertiary {
@@ -599,6 +599,40 @@ body {
   font-weight: 100;
 }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 6rem;
+  padding-left: 9rem;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+}
+
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  float: left;
+  background-color: #55c57a;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  -webkit-transform: translateX(-3rem) skewX(12deg);
+          transform: translateX(-3rem) skewX(12deg);
+}
+
+.story__img {
+  height: 100%;
+}
+
+.story__text {
+  -webkit-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.7)), to(rgba(40, 180, 133, 0.5))), url(../img/hero.jpg);
@@ -683,6 +717,12 @@ body {
   margin-top: -20vh;
 }
 
+.section-about:hover .heading-secondary {
+  -webkit-transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+          transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+  text-shadow: 2rem 2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .section-features {
   padding: 20rem 0;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.7)), to(rgba(40, 180, 133, 0.5))), url(../img/nat-4.jpg);
@@ -702,5 +742,16 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+}
+
+.section-tours:hover .heading-secondary {
+  -webkit-transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+          transform: scale(1.1) translate(-2rem, -1rem) rotateX(3deg) rotateY(-2deg);
+  text-shadow: 2rem 2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.section-stories {
+  background-color: #f7f7f7;
+  padding: 15rem 0;
 }
 /*# sourceMappingURL=main.css.map */
