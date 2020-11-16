@@ -13,7 +13,7 @@
 
 .btn {
   &:hover {
-    transform: translateY(0.3rem);
+    transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -33,6 +33,15 @@
 
     &::after {
       background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
     }
   }
 
