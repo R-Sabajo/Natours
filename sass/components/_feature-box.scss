@@ -1,7 +1,7 @@
 .feature-box {
   background-color: rgba($color-white, 0.7);
-  border-radius: 0.3rem;
-  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  border-radius: $default-border-radius;
+  box-shadow: $default-box-shadow;
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -25,5 +25,6 @@
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
     background-color: rgba($color-white, 0.8);
+    box-shadow: 0 2rem 5rem rgba($color-black, 0.15);
   }
 }

@@ -1,9 +1,9 @@
 .story {
   width: 75%;
   margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  box-shadow: $default-box-shadow;
   background-color: rgba($color-white, 0.7);
-  border-radius: 0.3rem;
+  border-radius: $default-border-radius;
   padding: 6rem;
   padding-left: 9rem;
   transform: skewX(-12deg);

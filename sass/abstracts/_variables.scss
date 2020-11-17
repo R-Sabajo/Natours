@@ -10,6 +10,7 @@ $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
 $color-grey-dark: #777;
+$color-grey-dark-2: #999;
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
@@ -23,3 +24,9 @@ $default-font-size: 1.6rem;
 $grid-row-width: 114rem;
 $gap-vertical: 8rem;
 $gap-horizontal: 6rem;
+
+// BORDER RADIUS
+$default-border-radius: 0.5rem;
+
+// BOX SHADOW
+$default-box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
