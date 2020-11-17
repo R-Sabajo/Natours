@@ -59,8 +59,7 @@
     url(../img/nat-10.jpg);
   background-size: 100%;
   border-radius: $default-border-radius;
-  box-shadow: 0 1.5rem 3rem rgba($color: $color-black, $alpha: 0.25);
-
+  box-shadow: $default-box-shadow;
   height: 50rem;
 }
 
