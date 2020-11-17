@@ -878,7 +878,7 @@ body {
 }
 
 .footer {
-  color: #f7f7f7;
+  color: #eee;
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem;
@@ -951,13 +951,14 @@ body {
 
 .footer__link:hover, .footer__link:active {
   color: #55c57a;
-  -webkit-transform: scale(1.05) translate(-0.1rem, -0.5rem) rotateX(7deg) rotateY(0deg);
-          transform: scale(1.05) translate(-0.1rem, -0.5rem) rotateX(7deg) rotateY(0deg);
-  text-shadow: 0.3rem 1rem 0.5rem rgba(0, 0, 0, 0.8);
+  -webkit-transform: scale(1.05) translate(0, -0.4rem) rotateX(7deg);
+          transform: scale(1.05) translate(0, -0.4rem) rotateX(7deg);
+  text-shadow: 0.3rem 1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .footer__copyright {
-  border-top: 0.1rem solid #777;
+  color: #777;
+  border-top: 0.1rem solid #999;
   padding-top: 2rem;
   width: 83%;
   float: right;
