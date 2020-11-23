@@ -537,5 +537,21 @@
         <div class="col-3-4">Col 3 of 4</div>
       </div>
     </section> -->
+
+    <script>
+      // Select DOM items
+      const navLink = document.querySelectorAll('.navigation__item'); // nav item class
+      const checkbox = document.querySelector('.navigation__checkbox'); //checkbox class
+
+      // Add Event Listener to every nav link
+      for (let i = 0; i < navLink.length; i++) {
+        navLink[i].addEventListener('click', checkboxOff);
+      }
+
+      // Uncheck checkbox
+      function checkboxOff() {
+        checkbox.checked = false;
+      }
+    </script>
   </body>
 </html>
