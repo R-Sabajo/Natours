@@ -10,6 +10,14 @@ html {
   // This defines what 1rem is
   font-size: 62.5%;
   scroll-behavior: smooth;
+
+  @include size-phone {
+    font-size: 50%;
+  }
+
+  @include responsive(phone) {
+    font-size: 50%;
+  }
 }
 
 body {
