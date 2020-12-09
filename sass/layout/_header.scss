@@ -9,9 +9,19 @@
   background-size: cover;
   background-position: top;
   border-radius: 1.5rem 1.5rem 0 0;
+
+  @include respond(tab-port) {
+    border-radius: 0;
+  }
+
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 
   &__logo-box {
     position: absolute;

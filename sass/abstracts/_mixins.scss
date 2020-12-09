@@ -29,13 +29,14 @@
 [1200-1800px]  Normal styles apply
 1800px +: Huge Desktops
 
-
 $breakpoint argument choices: 
 - phone
 - tab-port
 - tab-land
 - big-desktop
 */
+
+// ORDER: Base + Typography > general layout + grid > page layout > components
 
 // 1em = 16px
 
