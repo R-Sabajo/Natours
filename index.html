@@ -111,19 +111,25 @@
           <div class="col-1-2">
             <div class="composition">
               <img
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                 src="./img/nat-1-large.jpg"
-                alt="Photo 1"
                 class="composition__photo composition__photo--p1"
+                alt="Photo 1"
               />
               <img
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                 src="./img/nat-2-large.jpg"
-                alt="Photo 2"
                 class="composition__photo composition__photo--p2"
+                alt="Photo 2"
               />
               <img
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
                 src="./img/nat-3-large.jpg"
-                alt="Photo 3"
                 class="composition__photo composition__photo--p3"
+                alt="Photo 3"
               />
             </div>
           </div>
@@ -482,8 +488,23 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img class="popup__img" src="img/nat-8.jpg" alt="tour foto" />
-          <img class="popup__img" src="img/nat-9.jpg" alt="tour foto" />
+          <img
+            srcset="img/nat-8-600.jpg 600w, img/nat-8-1000.jpg 1000w"
+            sizes="(max-width: 900px) 600px, (max-width: 1200px) 1000px, 2000px"
+            src="./img/nat-8-2000.jpg "
+            class="popup__img"
+            alt="tour foto"
+          />
+          <img
+            srcset="img/nat-9-600.jpg 600w, img/nat-9-1000.jpg 1000w"
+            sizes="(max-width: 1200px) 1000px, (max-width: 900px) 600px, 2000px"
+            src="./img/nat-9-2000.jpg "
+            class="popup__img"
+            alt="tour foto"
+          />
+
+          <!-- <img class="popup__img" src="img/nat-8.jpg" alt="tour foto" />
+          <img class="popup__img" src="img/nat-9.jpg" alt="tour foto" /> -->
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close"> &times; </a>
